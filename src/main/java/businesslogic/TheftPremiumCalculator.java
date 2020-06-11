@@ -8,16 +8,17 @@ import java.util.List;
 
 public class TheftPremiumCalculator {
 
-    TheftRiskCoefficientDetector theftRiskCoefficientDetector = new TheftRiskCoefficientDetector();
+
 
 
     public BigDecimal calculateTheftPremium(Policy policy){
 
+        TheftRiskCoefficientDetector theftRiskCoefficientDetector = new TheftRiskCoefficientDetector();
         BigDecimal sumInsuredTheft = BigDecimal.ZERO;
 
         List<PolicyObjects> policyObjectsList = policy.getPolicyObjectsList();
-        for (PolicyObjects temp : policyObjectsList){
-            sumInsuredTheft = sumInsuredTheft.add(temp.getSubObjectSumTheft(temp.getPolicySubObjectsList()));
+        for (PolicyObjects object : policyObjectsList){
+            sumInsuredTheft = sumInsuredTheft.add(object.getSubObjectSumTheft(object.getPolicySubObjectsList()));
         }
 
         BigDecimal theftCoefficient = theftRiskCoefficientDetector.detect(sumInsuredTheft);

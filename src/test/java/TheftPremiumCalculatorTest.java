@@ -17,7 +17,7 @@ public class TheftPremiumCalculatorTest {
     PolicySubObjects tv = new PolicySubObjects(SubObjectType.TV, new BigDecimal("500.00"));
 
     @Test
-    public void theftPremiumCalculatorTestV1() {                                                                        //Theft Insured Sub-Objects SUM = 15
+    public void theftPremiumCalculatorTestV2() {                                                                        //Theft Insured Sub-Objects SUM = 15
 
         policy.addPolicyObject(house);
         fridge.addRiskType(RiskType.THEFT);
@@ -32,7 +32,7 @@ public class TheftPremiumCalculatorTest {
     }
 
     @Test
-    public void theftPremiumCalculatorTestV2() {                                                                        //Theft Insured Sub-Objects SUM < 15
+    public void theftPremiumCalculatorTestV1() {                                                                        //Theft Insured Sub-Objects SUM < 15
 
         policy.addPolicyObject(house);
         house.addSubInsuranceObject(phone);

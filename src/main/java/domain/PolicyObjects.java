@@ -7,7 +7,7 @@ import java.util.List;
 public class PolicyObjects {
 
     private ObjectType objectType;
-    private List<PolicySubObjects> policySubObjectsList = new ArrayList<PolicySubObjects>();
+    private List<PolicySubObjects> policySubObjectsList = new ArrayList<>();
 
 
     public PolicyObjects(ObjectType objectType){
@@ -26,9 +26,9 @@ public class PolicyObjects {
 
         BigDecimal sumInsuredFire = BigDecimal.ZERO;
 
-        for (PolicySubObjects temp : policySubObjectsList){
-            if (temp.isInsuredFrom(RiskType.FIRE)){
-                sumInsuredFire = sumInsuredFire.add(temp.getPrice());
+        for (PolicySubObjects object : policySubObjectsList){
+            if (object.isInsuredFrom(RiskType.FIRE)){
+                sumInsuredFire = sumInsuredFire.add(object.getPrice());
             }
         }
 
@@ -39,9 +39,9 @@ public class PolicyObjects {
 
         BigDecimal sumInsuredTheft = BigDecimal.ZERO;
 
-        for (PolicySubObjects temp : policySubObjectsList){
-            if (temp.isInsuredFrom(RiskType.THEFT)){
-                sumInsuredTheft = sumInsuredTheft.add(temp.getPrice());
+        for (PolicySubObjects object : policySubObjectsList){
+            if (object.isInsuredFrom(RiskType.THEFT)){
+                sumInsuredTheft = sumInsuredTheft.add(object.getPrice());
             }
         }
 

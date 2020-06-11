@@ -6,10 +6,12 @@ import java.math.BigDecimal;
 
 public class PremiumCalculator {
 
-    TheftPremiumCalculator theftPremiumCalculator = new TheftPremiumCalculator();
-    FirePremiumCalculator firePremiumCalculator = new FirePremiumCalculator();
+
 
     public BigDecimal calculate (Policy policy){
+
+        TheftPremiumCalculator theftPremiumCalculator = new TheftPremiumCalculator();
+        FirePremiumCalculator firePremiumCalculator = new FirePremiumCalculator();
 
         BigDecimal theftPremium = theftPremiumCalculator.calculateTheftPremium(policy);
         BigDecimal firePremium = firePremiumCalculator.calculateFirePremium(policy);

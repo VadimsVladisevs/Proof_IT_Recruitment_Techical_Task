@@ -16,7 +16,7 @@ public class FirePremiumCalculatorTest {
     PolicySubObjects tv = new PolicySubObjects(SubObjectType.TV, new BigDecimal("500.00"));
 
     @Test
-    public void firePremiumCalculatorTestV1() {                                                                          //Fire Insured Sub-Objects SUM = 100
+    public void firePremiumCalculatorTestV2() {                                                                          //Fire Insured Sub-Objects SUM = 100
 
         policy.addPolicyObject(house);
         fridge.addRiskType(RiskType.FIRE);
@@ -31,7 +31,7 @@ public class FirePremiumCalculatorTest {
     }
 
     @Test
-    public void firePremiumCalculatorTestV2() {                                                                          //Fire Insured Sub-Objects SUM < 100
+    public void firePremiumCalculatorTestV1() {                                                                          //Fire Insured Sub-Objects SUM < 100
 
         policy.addPolicyObject(house);
         house.addSubInsuranceObject(phone);
