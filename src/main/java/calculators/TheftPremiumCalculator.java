@@ -1,7 +1,7 @@
-package businesslogic;
+package calculators;
 
-import domain.Policy;
-import domain.PolicyObjects;
+import objects.Policy;
+import objects.PolicyObjects;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;

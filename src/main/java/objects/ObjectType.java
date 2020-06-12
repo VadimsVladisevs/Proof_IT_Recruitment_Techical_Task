@@ -1,4 +1,4 @@
-package domain;
+package objects;
 
 public enum ObjectType {
     HOUSE,

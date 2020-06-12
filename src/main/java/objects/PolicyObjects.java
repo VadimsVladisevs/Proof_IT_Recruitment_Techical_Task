@@ -1,4 +1,4 @@
-package domain;
+package objects;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

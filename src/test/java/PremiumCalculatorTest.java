@@ -1,5 +1,5 @@
-import businesslogic.PremiumCalculator;
-import domain.*;
+import calculators.PremiumCalculator;
+import objects.*;
 import org.junit.Test;
 
 import java.math.BigDecimal;

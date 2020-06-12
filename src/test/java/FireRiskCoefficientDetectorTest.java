@@ -1,4 +1,4 @@
-import businesslogic.FireRiskCoefficientDetector;
+import calculators.FireRiskCoefficientDetector;
 import org.junit.Test;
 
 import java.math.BigDecimal;

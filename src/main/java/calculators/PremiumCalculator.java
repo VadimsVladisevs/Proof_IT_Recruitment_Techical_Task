@@ -1,6 +1,6 @@
-package businesslogic;
+package calculators;
 
-import domain.Policy;
+import objects.Policy;
 import java.math.BigDecimal;
 
 

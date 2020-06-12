@@ -1,4 +1,4 @@
-import businesslogic.TheftRiskCoefficientDetector;
+import calculators.TheftRiskCoefficientDetector;
 import org.junit.Test;
 
 import java.math.BigDecimal;
