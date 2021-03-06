@@ -1,0 +1,11 @@
+Here is a short feedback from our tech guys:
+
+What was good abou the task:
+
+Pure Java code, without heavy weight frameworks was used.
+Implementation of business task without additional not needed in this iteration features like validation, rest api and so on.
+ 
+What could be done better:
+
+No dependency injection used in this solution.
+Expect at least constructor based dependency injection in this code.
